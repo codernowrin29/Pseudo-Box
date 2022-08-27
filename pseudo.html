@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+        h1 {
+            color: orangered;
+        }
+
+        h1:hover {
+            color: skyblue;
+            background-color: seagreen;
+            /*margin: 50px;
+            padding: 50px;
+            font-size: 50px;
+            font-weight: 700;
+            text-align: center;*/
+        }
+
+        .mid-input:focus {
+            color: rgb(226, 223, 43);
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        a:visited {
+            color: rgb(255, 102, 0);
+        }
+
+        /*li:nth-child(n) {
+            color: chocolate;
+        }*/
+        /*EVEN*/
+        li:nth-child(2n) {
+            color: rgb(113, 196, 58);
+        }
+
+        /*ODD*/
+        li:nth-child(2n+1) {
+            color: rgb(218, 112, 195);
+            background-color: rgb(0, 0, 0);
+        }
+
+        h3::before {
+            content: 'Hello!! ';
+        }
+
+        h3::after {
+            content: ' Gelo!!';
+            background-color: khaki;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is Normal</h1>
+    <input type="text">
+    <input class="mid-input" type="text">
+    <input type="text">
+
+    <br>
+
+    <a href="http://www.google.com/">GOOGLE</a>
+
+    <a href="https://youtu.be/jrSID1ocg3s">YouTube</a>
+
+    <a
+        href="https://web.programming-hero.com/restart5/video/restart5-5_5-3-pseudo-class-hover-class-hover-visited-focus">Programming
+        Hero</a>
+
+    <br>
+
+    <ol>
+        <li>Amena</li>
+        <li>Abdullah</li>
+        <li>Fatema</li>
+        <li>Mohammad</li>
+    </ol>
+
+    <br>
+
+    <h3>Mid Size Header-1</h3>
+    <h3>Mid Size Header-2</h3>
+    <h3>Mid Size Header-3</h3>
+    <h3>Mid Size Header-4</h3>
+    <h3>Mid Size Header-5</h3>
+    <h3>Mid Size Header-6</h3>
+</body>
+
+</html>
